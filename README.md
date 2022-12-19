@@ -2,7 +2,7 @@
 > React application that's consume an Rick and Morty API then show Characters(Names, Images)
 
 # Live Demo
-you can check out website [here]()
+you can check out website [here](https://brilliant-mandazi-b1da83.netlify.app/)
 
 
 ## Built With
