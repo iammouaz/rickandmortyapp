@@ -9,10 +9,9 @@ export interface ICharacters {
   id: string;
   image: string;
   name: string;
-  status: "Alive" | "Dead" | "unknown";
-  gender: "Female" | "Male" | "Genderless" | "unknown";
+  status: string;
+  gender: string;
   type: String;
-  origin: Location;
 }
 
 export interface IEpisodes {

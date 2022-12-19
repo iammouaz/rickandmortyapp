@@ -10,7 +10,6 @@ const CharactersCard: React.FunctionComponent<CharactersCardProps> = ({
   data,
 }) => {
   const styles = useStyles(data.image)();
-
   return (
     <Grid className={styles.classes.cardItem} xs={6} md={3} xl={2} item py={2}>
       <Box className={styles.classes.boxContainer} />
