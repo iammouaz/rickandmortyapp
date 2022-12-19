@@ -1,13 +1,22 @@
-import { createTheme } from '@mui/material/styles';
-import { green, purple } from '@mui/material/colors';
+import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
-  palette: {
-    primary: {
-      main: purple[500],
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          fontFamily: ["Roboto", "sans-serif"].join(","),
+          color: "white",
+        },
+      },
     },
-    secondary: {
-      main: green[500],
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          position: "sticky",
+          backgroundColor: "#000",
+        },
+      },
     },
   },
 });

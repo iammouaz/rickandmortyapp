@@ -1,11 +1,29 @@
 import { useQuery } from "@apollo/client";
-import { GET_CHARACTERS } from "api/charactersRequests/charactersList";
+import { Grid } from "@mui/material";
+import CharactersCard from "components/Cards/CharactersCard/CharactersCard";
+import Layout from "components/layout/Layout/Layout";
+import CharactersCardSkeleton from "components/skeleton/CharactersCardSkeleton/CharactersCardSkeleton";
+import { GET_CHARACTERS } from "graphqModels/character/characters.query";
+import { ICharactersListResponse } from "models/characters/characters-types";
 
 function App() {
-  const { loading, error, data } = useQuery(GET_CHARACTERS);
+  const { loading, data } = useQuery<ICharactersListResponse>(GET_CHARACTERS);
 
-
-  return <div></div>;
+  return (
+    <Layout>
+      <Grid container>
+        {loading ? (
+          [...new Array(12)].map(() => <CharactersCardSkeleton />)
+        ) : (
+          <>
+            {data?.characters.results.map((item) => (
+              <CharactersCard key={item.id} data={item} />
+            ))}
+          </>
+        )}
+      </Grid>
+    </Layout>
+  );
 }
 
 export default App;
