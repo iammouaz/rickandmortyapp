@@ -13,12 +13,3 @@ export interface ICharacters {
   gender: string;
   type: String;
 }
-
-export interface IEpisodes {
-  id: string;
-  name: String;
-  air_date: String;
-  episode: String;
-  characters: ICharacters[];
-  created: String;
-}
