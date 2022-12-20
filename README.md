@@ -1,4 +1,4 @@
-# Rick And Morty APp
+# Rick And Morty APP
 > React application that's consume an Rick and Morty API then show Characters(Names, Images)
 
 # Live Demo
