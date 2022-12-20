@@ -6,8 +6,13 @@ import CharactersCardSkeleton from "components/skeleton/CharactersCardSkeleton/C
 import { GET_CHARACTERS } from "graphqModels/character/characters.query";
 import { ICharactersListResponse } from "models/characters/characters-types";
 
+
 function App() {
+  //Getting Rick and Morty Characters from the api
   const { loading, data } = useQuery<ICharactersListResponse>(GET_CHARACTERS);
+
+  //Init Recoil State (Only to show it)
+  // const [characters, setCharacters] = useRecoilState(charactersAtom);
 
   return (
     <Layout>

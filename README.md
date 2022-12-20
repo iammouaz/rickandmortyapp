@@ -23,18 +23,17 @@ Before we start, make sure you fit the prerequisites, the source code is inside 
 ### Setup
 - https://github.com/iammouaz/rickandmortyapp.git
 
-### Install
-- `npm install`
-- `npm install --also=dev` (to install the dev dependencies, like webpack)
+### Install Commands
+- `yarn`  to install packages
 
 ### Usage
-- `npm start` from VSCode
+- `yarn start`  to start the dev server.
 
 ### Run tests
-- `npm tests`
+- `yarn test`   to do the unit test.
 
 ### Deployment
-- `npm deploy`
+- `yarn build`
 
 ## 🤝 Contributing
 
