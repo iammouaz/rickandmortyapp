@@ -14,7 +14,7 @@ function App() {
   const { loading, data } = useQuery<ICharactersListResponse>(GET_CHARACTERS);
 
   //Init Recoil State (Only to show it)
-  const [characters, setCharacters] = useRecoilState(charactersAtom);
+  // const [characters, setCharacters] = useRecoilState(charactersAtom);
 
   return (
     <Layout>
