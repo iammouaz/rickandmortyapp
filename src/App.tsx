@@ -5,8 +5,6 @@ import Layout from "components/layout/Layout/Layout";
 import CharactersCardSkeleton from "components/skeleton/CharactersCardSkeleton/CharactersCardSkeleton";
 import { GET_CHARACTERS } from "graphqModels/character/characters.query";
 import { ICharactersListResponse } from "models/characters/characters-types";
-import { useRecoilState } from "recoil";
-import { charactersAtom } from "recoil/atoms";
 
 
 function App() {
